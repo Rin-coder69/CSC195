@@ -9,7 +9,7 @@ public:
 		std::cout << "Student Constructor called\n";
 		
 	}
-	Student(std::string name, age_t age, float gpa) : Human( name,age ) ,m_gpa{ gpa } {
+	Student(std::string name, age_t age, double gpa) : Human( name,age ) ,m_gpa{ gpa } {
 
 		m_name = name;
 		m_age = age;
@@ -20,10 +20,10 @@ public:
 	void Read();
 	void Write();
 
-	void SetGPA(float gpa) { m_gpa = gpa; }
+	void SetGPA(double gpa) { m_gpa = gpa; }
 	float GetGPA() { return m_gpa; }
 
 	Type GetType()override { return Type:: STUDENT; }
 private:
-	float m_gpa = 4.0f;
+	double m_gpa = 4.0f;
 };

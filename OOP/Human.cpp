@@ -11,7 +11,7 @@ void Human::Read()
 {
 	std::cout << "Name:  ";
 	std::cin >> m_name;
-	m_name = GetData<std::string>();
+	//m_name = GetData<std::string>();
 	std::cout << "Age:  ";
 	//std::cin >> m_age;
 	m_age = GetData<age_t>();

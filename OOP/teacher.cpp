@@ -14,6 +14,7 @@ void Teacher::Read()
 
 void Teacher::Write()
 {
+	Human::Write();
 	std::cout << "<---------------TEACHER---------------->\n ";
 	std::cout << "Class Name: " << m_className << std::endl;
 	std::cout << "Classroom: " << m_classroom << std::endl;

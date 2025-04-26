@@ -3,6 +3,7 @@
 #include "teacher.h"
 
 School::~School()
+
 {
 	for (Human* human : m_humans)
 	{

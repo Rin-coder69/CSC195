@@ -8,7 +8,7 @@ template<typename T>
  T GetData() {
     T x;
 
-    std::cout << std::numeric_limits<int>::max() << std::endl; // Get the maximum value for int
+    //std::cout << std::numeric_limits<int>::max() << std::endl; // Get the maximum value for int
     while (true) {
 
         std::cin >> x;
