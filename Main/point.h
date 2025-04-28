@@ -25,6 +25,23 @@ namespace math {
 		{
 			return !(*this == other);
 		}
+		bool operator < (const Point<T>& other)const
+		{
+			return (m_x < other.m_x && m_y < other.m_y);
+		}
+		bool operator > (const Point<T>& other)const
+		{
+			return (m_x > other.m_x && m_y > other.m_y);
+		}
+		bool operator <= (const Point<T>& other)const
+		{
+			return (m_x <= other.m_x && m_y <= other.m_y);
+		}
+		bool operator >= (const Point<T>& other)const
+		{
+			return (m_x >= other.m_x && m_y >= other.m_y);
+		}
+		
 		template<typename U>
 		friend std::ostream& operator << (std::ostream& ostream, const Point<T>& point)
 		{
