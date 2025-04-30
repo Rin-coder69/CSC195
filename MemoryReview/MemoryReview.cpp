@@ -12,7 +12,8 @@ void Square(int& x)
 }
 void Double(int* y)
 {
-    y = y * 2;
+	std::cout << *y << endl;
+    *y = *y * 2;
 }
 int main()
 {
@@ -58,6 +59,7 @@ int main()
     //
     // declare an int pointer, set it to nullptr (it points to nothing)
     int* p = nullptr;
+
     // set the int pointer to the address of the int variable created in the
     //REFERENCE section
     p = &number;
@@ -66,7 +68,7 @@ int main()
     // what is this address that the pointer is pointing to? (00000031980FF8A4)
     // output the value of the object the pointer is pointing to (dereference the
     //pointer)
-    std::cout << p << endl;
+    std::cout << *p << endl;
     //  POINTER PARAMETER 
     //
     // create a function above main() called Double that takes in an int pointer
@@ -80,6 +82,7 @@ int main()
     Double(p);
     // output the dereference pointer
     std::cout << *p << endl;
+    
 
     // output the int variable created in the REFERENCE section
     std::cout << number << endl;
